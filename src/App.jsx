@@ -10,32 +10,46 @@ import ArrayExample from "./useState/ArrayExample";
 import BasicUseEffect from "./useEffect/BasicUseEffect";
 import CountEffect from "./useEffect/CountEffect";
 import Users from "./useEffect/Users";
+import { UserContext } from "./useContext/UserContext";
+import { ThemeContext } from "./useContext/themeContext";
+import Page from "./useContext/Page";
+import ShowUsers from "./useContext/ShowUsers";
+import { useState } from "react";
 
 function App() {
+  const user = { name: "Rohit", role: "Developer" };
+  const [dark, setDark] = useState(false);
+
   return (
     <>
-      <Greeting name="Rohit" />
-      <hr />
-      <Counter />
-      <hr />
-      <UserGreeting isLogedIn={true} />
-      <hr />
-      <SimpleForm />
-      <hr />
-      <ProfileCard />
-      <hr />
-      <ListKeys />
-      <hr />
-      <Form />
-      <hr />
-      <ArrayExample />
-      <hr />
-      <BasicUseEffect />
-      <hr />
-      <CountEffect />
-      <hr />
-      <Users />
-      <hr />
+      <UserContext.Provider value={user}>
+        <ThemeContext.Provider value={{ dark, toggle: () => setDark(!dark) }}>
+          <Greeting name="Rohit" />
+          <hr />
+          <Counter />
+          <hr />
+          <UserGreeting isLogedIn={true} />
+          <hr />
+          <SimpleForm />
+          <hr />
+          <ProfileCard />
+          <hr />
+          <ListKeys />
+          <hr />
+          <Form />
+          <hr />
+          <ArrayExample />
+          <hr />
+          <BasicUseEffect />
+          <hr />
+          <CountEffect />
+          <hr />
+          <Users />
+          <hr />
+          <ShowUsers />
+          <Page />
+        </ThemeContext.Provider>
+      </UserContext.Provider>
     </>
   );
 }
