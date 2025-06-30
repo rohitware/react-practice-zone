@@ -5,6 +5,7 @@ function SimpleForm() {
     username: "",
     email: "",
     password: "",
+    car: "",
   });
 
   const handleChange = (e) => {
@@ -46,6 +47,12 @@ function SimpleForm() {
           placeholder="Password"
         />{" "}
         <br />
+        <select name="car" value={formData.car} onChange={handleChange}>
+          <option value="">Select a car</option>
+          <option value="Ford">Ford</option>
+          <option value="Volvo">Volvo</option>
+          <option value="Fiat">Fiat</option>
+        </select>
         <button type="submit">Submit</button>
       </form>
     </>
