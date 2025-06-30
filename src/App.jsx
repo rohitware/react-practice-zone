@@ -15,6 +15,7 @@ import { ThemeContext } from "./useContext/themeContext";
 import Page from "./useContext/Page";
 import ShowUsers from "./useContext/ShowUsers";
 import { useState } from "react";
+import Task from "./Task";
 
 function App() {
   const user = { name: "Rohit", role: "Developer" };
@@ -48,6 +49,8 @@ function App() {
           <hr />
           <ShowUsers />
           <Page />
+          <hr />
+          <Task />
         </ThemeContext.Provider>
       </UserContext.Provider>
     </>
