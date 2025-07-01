@@ -16,6 +16,7 @@ import Page from "./useContext/Page";
 import ShowUsers from "./useContext/ShowUsers";
 import { useState } from "react";
 import Task from "./Task";
+import LikeButton from "./useState/LikeButton";
 
 function App() {
   const user = { name: "Rohit", role: "Developer" };
@@ -32,6 +33,8 @@ function App() {
           <UserGreeting isLogedIn={true} />
           <hr />
           <SimpleForm />
+          <hr />
+          <LikeButton />
           <hr />
           <ProfileCard />
           <hr />
