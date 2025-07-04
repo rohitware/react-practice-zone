@@ -17,6 +17,8 @@ import ShowUsers from "./useContext/ShowUsers";
 import { useState } from "react";
 import Task from "./Task";
 import LikeButton from "./useState/LikeButton";
+import InputFocus from "./useRef/InputFocus";
+import ColorButton from "./useRef/ColorButton";
 
 function App() {
   const user = { name: "Rohit", role: "Developer" };
@@ -54,6 +56,10 @@ function App() {
           <Page />
           <hr />
           <Task />
+          <hr />
+          <InputFocus />
+          <hr />
+          <ColorButton />
         </ThemeContext.Provider>
       </UserContext.Provider>
     </>
