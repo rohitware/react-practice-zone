@@ -19,6 +19,7 @@ import Task from "./Task";
 import LikeButton from "./useState/LikeButton";
 import InputFocus from "./useRef/InputFocus";
 import ColorButton from "./useRef/ColorButton";
+import ParentComponent from "./useCallback/ParentComponent";
 
 function App() {
   const user = { name: "Rohit", role: "Developer" };
@@ -60,6 +61,8 @@ function App() {
           <InputFocus />
           <hr />
           <ColorButton />
+          <hr />
+          <ParentComponent />
         </ThemeContext.Provider>
       </UserContext.Provider>
     </>
