@@ -20,6 +20,8 @@ import LikeButton from "./useState/LikeButton";
 import InputFocus from "./useRef/InputFocus";
 import ColorButton from "./useRef/ColorButton";
 import ParentComponent from "./useCallback/ParentComponent";
+import MemoDemo from "./useMemo/MemoDemo";
+import MemoDemo1 from "./useMemo/MemoDemo1";
 
 function App() {
   const user = { name: "Rohit", role: "Developer" };
@@ -63,6 +65,10 @@ function App() {
           <ColorButton />
           <hr />
           <ParentComponent />
+          <hr />
+          <MemoDemo />
+          <hr />
+          <MemoDemo1 />
         </ThemeContext.Provider>
       </UserContext.Provider>
     </>
