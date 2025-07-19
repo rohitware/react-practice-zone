@@ -1,3 +1,4 @@
+import React, { Suspense } from "react";
 import "./App.css";
 import Greeting from "./Greeting";
 import Counter from "./useState/Counter";
@@ -26,6 +27,7 @@ import MemoDemo1 from "./useMemo/MemoDemo1";
 function App() {
   const user = { name: "Rohit", role: "Developer" };
   const [dark, setDark] = useState(false);
+  const MyLazyCom = React.lazy(() => import("./MyLazyCom"));
 
   return (
     <>
@@ -69,6 +71,11 @@ function App() {
           <MemoDemo />
           <hr />
           <MemoDemo1 />
+          <hr />
+          <h1>Learning Leazy loading in react</h1>
+          <Suspense fallback={<div>Loading...</div>}>
+            <MyLazyCom />
+          </Suspense>
         </ThemeContext.Provider>
       </UserContext.Provider>
     </>
