@@ -23,6 +23,7 @@ import ColorButton from "./useRef/ColorButton";
 import ParentComponent from "./useCallback/ParentComponent";
 import MemoDemo from "./useMemo/MemoDemo";
 import MemoDemo1 from "./useMemo/MemoDemo1";
+import ReducerCounter from "./useReducer/Counter";
 
 function App() {
   const user = { name: "Rohit", role: "Developer" };
@@ -72,10 +73,14 @@ function App() {
           <hr />
           <MemoDemo1 />
           <hr />
+
           <h1>Learning Leazy loading in react</h1>
           <Suspense fallback={<div>Loading...</div>}>
             <MyLazyCom />
           </Suspense>
+          <hr />
+          <ReducerCounter />
+          <hr />
         </ThemeContext.Provider>
       </UserContext.Provider>
     </>
