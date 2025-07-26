@@ -1,6 +1,6 @@
 import React, { useReducer } from "react";
 
-const counterReducer = (state, action) => {
+const reducerFn = (state, action) => {
   switch (action.type) {
     case "INCREMENT":
       return { count: state.count + 1 };
@@ -12,9 +12,9 @@ const counterReducer = (state, action) => {
       return state;
   }
 };
-const ReducerCounter = () => {
+const Counter1 = () => {
   const initialState = { count: 0 };
-  const [state, dispatch] = useReducer(counterReducer, initialState);
+  const [state, dispatch] = useReducer(reducerFn, initialState);
 
   return (
     <>
@@ -26,4 +26,4 @@ const ReducerCounter = () => {
     </>
   );
 };
-export default ReducerCounter;
+export default Counter1;

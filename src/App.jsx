@@ -23,7 +23,8 @@ import ColorButton from "./useRef/ColorButton";
 import ParentComponent from "./useCallback/ParentComponent";
 import MemoDemo from "./useMemo/MemoDemo";
 import MemoDemo1 from "./useMemo/MemoDemo1";
-import ReducerCounter from "./useReducer/Counter";
+import Counter1 from "./useReducer/Counter";
+import Todos from "./useReducer/Todos";
 
 function App() {
   const user = { name: "Rohit", role: "Developer" };
@@ -79,7 +80,9 @@ function App() {
             <MyLazyCom />
           </Suspense>
           <hr />
-          <ReducerCounter />
+          <Counter1 />
+          <hr />
+          <Todos />
           <hr />
         </ThemeContext.Provider>
       </UserContext.Provider>
