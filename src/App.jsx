@@ -25,6 +25,7 @@ import MemoDemo from "./useMemo/MemoDemo";
 import MemoDemo1 from "./useMemo/MemoDemo1";
 import Counter1 from "./useReducer/Counter";
 import Todos from "./useReducer/Todos";
+import SingleInputForm from "./forms/SingleInputForm";
 
 function App() {
   const user = { name: "Rohit", role: "Developer" };
@@ -74,7 +75,6 @@ function App() {
           <hr />
           <MemoDemo1 />
           <hr />
-
           <h1>Learning Leazy loading in react</h1>
           <Suspense fallback={<div>Loading...</div>}>
             <MyLazyCom />
@@ -84,6 +84,7 @@ function App() {
           <hr />
           <Todos />
           <hr />
+          <SingleInputForm />
         </ThemeContext.Provider>
       </UserContext.Provider>
     </>
