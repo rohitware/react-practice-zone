@@ -5,6 +5,9 @@ function MultipleInputForm() {
     name: "",
     email: "",
     password: "",
+    age: "",
+    gender: "",
+    message: "",
   });
 
   const HandleChange = (e) => {
@@ -50,6 +53,32 @@ function MultipleInputForm() {
           onChange={HandleChange}
         />
         <br />
+        <label>Age</label>
+        <input
+          type="number"
+          name="age"
+          value={formData.age}
+          onChange={HandleChange}
+        />
+        <br />
+        <label>Gender</label>
+        <select
+          type=" radio"
+          name="gender"
+          value={formData.gender}
+          onChange={HandleChange}
+        >
+          <option value="">Select gender</option>
+          <option value="male"> Male </option>
+          <option value="female">Female</option>
+        </select>
+        <br />
+        <label>Message</label>
+        <textarea
+          name="message"
+          value={formData.message}
+          onChange={HandleChange}
+        />
         <button type="submit">Submit</button>
       </form>
     </>
