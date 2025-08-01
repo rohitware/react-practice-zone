@@ -12,14 +12,13 @@ function SingleInputForm() {
       <h1>Form Learning</h1>
       <h3> Single input form</h3>
       <form onSubmit={handleSubmit}>
-        <label>
-          Name{" "}
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </label>
+        <label>Name </label>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+
         <button type="submit">Submit</button>
       </form>
     </>

@@ -26,6 +26,7 @@ import MemoDemo1 from "./useMemo/MemoDemo1";
 import Counter1 from "./useReducer/Counter";
 import Todos from "./useReducer/Todos";
 import SingleInputForm from "./forms/SingleInputForm";
+import MultipleInputForm from "./forms/MultipleInputForm";
 
 function App() {
   const user = { name: "Rohit", role: "Developer" };
@@ -85,6 +86,9 @@ function App() {
           <Todos />
           <hr />
           <SingleInputForm />
+          <hr />
+          <MultipleInputForm />
+          <hr />
         </ThemeContext.Provider>
       </UserContext.Provider>
     </>
