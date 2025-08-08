@@ -27,6 +27,7 @@ import Counter1 from "./useReducer/Counter";
 import Todos from "./useReducer/Todos";
 import SingleInputForm from "./forms/SingleInputForm";
 import MultipleInputForm from "./forms/MultipleInputForm";
+import ControlledForm from "./forms/ControlledForm";
 
 function App() {
   const user = { name: "Rohit", role: "Developer" };
@@ -88,6 +89,8 @@ function App() {
           <SingleInputForm />
           <hr />
           <MultipleInputForm />
+          <hr />
+          <ControlledForm />
           <hr />
         </ThemeContext.Provider>
       </UserContext.Provider>
