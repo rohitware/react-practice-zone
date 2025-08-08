@@ -28,6 +28,7 @@ import Todos from "./useReducer/Todos";
 import SingleInputForm from "./forms/SingleInputForm";
 import MultipleInputForm from "./forms/MultipleInputForm";
 import ControlledForm from "./forms/ControlledForm";
+import UncontrolledForm from "./forms/UncontrolledForm";
 
 function App() {
   const user = { name: "Rohit", role: "Developer" };
@@ -91,6 +92,8 @@ function App() {
           <MultipleInputForm />
           <hr />
           <ControlledForm />
+          <hr />
+          <UncontrolledForm />
           <hr />
         </ThemeContext.Provider>
       </UserContext.Provider>
