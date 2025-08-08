@@ -5,6 +5,7 @@ function ControlledForm() {
   const handlSubmit = (e) => {
     e.preventDefault();
     console.log(`${name}`);
+    setName("");
   };
   return (
     <>
